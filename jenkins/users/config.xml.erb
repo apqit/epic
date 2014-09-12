@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <user>
-  <fullName><%= @name %></fullName>
+  <fullName><%= @jenkins_user %></fullName>
   <properties>
     <hudson.model.PaneStatusProperties>
       <collapsed/>
@@ -29,7 +29,7 @@
       <passwordHash>#jbcrypt:<%= @password %></passwordHash>
     </hudson.security.HudsonPrivateSecurityRealm_-Details>
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.10">
-      <emailAddress><%= @name %></emailAddress>
+      <emailAddress><%= @jenkins_user %></emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
     <jenkins.security.LastGrantedAuthoritiesProperty>
       <roles>
